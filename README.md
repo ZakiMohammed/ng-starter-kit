@@ -8,34 +8,15 @@ Starter kit for Angular application.
 1. ESLint and Prettier [Done]
 1. Build commands and config [Done]
 1. Budget [Done]
-1. Install source explorer
-1. Environment Files
-1. Bootstrap
-
-- Install Bootstrap
-- Install Bootstrap Icon
-
-1. Pages
-
-- Home, About, Not Found
-
-1. Skeleton
-
-- Header, Footer, Shell, Routing
-
-1. Toaster
-
-- Add toaster
-
-1. Login
-1. Interceptor
-
-- Token, Error
-
-1. Feature
-
-- List, Details
-
+1. Install Source Map Explorer [Done]
+1. Environment files [Done]
+1. Bootstrap and Bootstrap Icon
+1. Pages - Home, About, Not Found
+1. Skeleton - Header, Footer, Shell, Routing
+1. Add toaster
+1. Login - Login, Routing, Guards
+1. Interceptor - Token, Error
+1. Features - List, Details
 1. App Insights
 
 ## Run App
