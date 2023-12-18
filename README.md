@@ -10,9 +10,9 @@ Starter kit for Angular application.
 1. Budget [Done]
 1. Install Source Map Explorer [Done]
 1. Environment files [Done]
-1. Bootstrap and Bootstrap Icon
-1. Pages - Home, About, Not Found
-1. Skeleton - Header, Footer, Shell, Routing
+1. Bootstrap and Bootstrap Icon [Done]
+1. Pages - Home, About, Not Found, Login [Done]
+1. Skeleton - Header, Footer, Shell, Routing [Done]
 1. Add toaster
 1. Login - Login, Routing, Guards
 1. Interceptor - Token, Error
