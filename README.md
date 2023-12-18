@@ -15,7 +15,7 @@ Starter kit for Angular application.
 1. Skeleton - Header, Footer, Shell, Routing [Done]
 1. Add toaster [Done]
 1. Login - Login, Routing, Guards [Done]
-1. Interceptor - Token, Error
+1. Interceptor - Token, Error [Done]
 1. Features - List, Details
 1. App Insights
 
@@ -24,6 +24,7 @@ Starter kit for Angular application.
 Below command will run the project:
 
 ```
+npm run server
 npm start
 ```
 
@@ -228,4 +229,3 @@ export const appConfig: ApplicationConfig = {
   ],
 };
 ```
-
