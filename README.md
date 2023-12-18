@@ -171,3 +171,37 @@ Refer:
 - https://github.com/angular-eslint/angular-eslint/blob/main/docs/FORMATTING_RULES.md
 - https://github.com/prettier/eslint-config-prettier
 - https://github.com/prettier/eslint-plugin-prettier
+
+## Bundle Monitoring and Visualization
+
+For monitoring the bundle size and visualization of components we can use 2 packages:
+
+- Source Map Explorer
+- Vite Bundle Visualizer
+
+### 1. Source Map Explorer
+
+For source map explorer follow below steps:
+
+Install `source-map-explorer` as `devDependencies`:
+
+```
+npm i source-map-explorer -D
+```
+
+Add scripts in `package.json` file:
+
+```
+"scripts": {
+  "build:analyze": "ng build --configuration production --source-map",
+  "explorer": "npm run build:analyze && source-map-explorer dist/**/*.js"
+}
+```
+
+### 2. Vite Bundle Visualizer
+
+For `vite-bundle-visualizer` run below command after running the `build:analyze` command:
+
+```
+npx vite-bundle-visualizer --i C:\Zaki\Study\Angular\ng-starter-kit\dist\ng-starter-kit\browser\index.html
+```
