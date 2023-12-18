@@ -6,10 +6,10 @@ Starter kit for Angular application.
 
 1. JSON Server [Done]
 1. ESLint and Prettier [Done]
-1. Build commands
+1. Build commands and config [Done]
+1. Budget [Done]
 1. Install source explorer
 1. Environment Files
-1. Budget
 1. Bootstrap
 
 - Install Bootstrap
@@ -28,9 +28,6 @@ Starter kit for Angular application.
 - Add toaster
 
 1. Login
-
-- Login, Routing, Guards,
-
 1. Interceptor
 
 - Token, Error
