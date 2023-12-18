@@ -13,8 +13,8 @@ Starter kit for Angular application.
 1. Bootstrap and Bootstrap Icon [Done]
 1. Pages - Home, About, Not Found, Login [Done]
 1. Skeleton - Header, Footer, Shell, Routing [Done]
-1. Add toaster
-1. Login - Login, Routing, Guards
+1. Add toaster [Done]
+1. Login - Login, Routing, Guards [Done]
 1. Interceptor - Token, Error
 1. Features - List, Details
 1. App Insights
@@ -186,3 +186,46 @@ For `vite-bundle-visualizer` run below command after running the `build:analyze`
 ```
 npx vite-bundle-visualizer --i C:\Zaki\Study\Angular\ng-starter-kit\dist\ng-starter-kit\browser\index.html
 ```
+
+## Add Bootstrap and Bootstrap Icon
+
+Install `bootstrap` and `bootstrap-icon`:
+
+```
+npm i bootstrap bootstrap-icon
+```
+
+Add to `style.scss`:
+
+```
+@import 'bootstrap/scss/bootstrap';
+@import 'bootstrap-icons/font/bootstrap-icons';
+```
+
+## Add Toastr
+
+Install `ngx-toastr`:
+
+```
+npm i ngx-toastr
+```
+
+Add to `app.config.ts` file:
+
+```
+...
+import { provideAnimations } from '@angular/platform-browser/animations';
+import { provideToastr } from 'ngx-toastr';
+
+export const appConfig: ApplicationConfig = {
+  providers: [
+    ...
+    provideAnimations(),
+    provideToastr({
+      positionClass: 'toast-bottom-right',
+      preventDuplicates: true,
+    }),
+  ],
+};
+```
+

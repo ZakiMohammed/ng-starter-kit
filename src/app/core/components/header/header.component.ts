@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { Router, RouterModule } from '@angular/router';
+import { RouterModule } from '@angular/router';
+import { AuthService } from '../../services/auth.service';
 
 @Component({
   selector: 'app-header',
@@ -10,13 +11,13 @@ import { Router, RouterModule } from '@angular/router';
   styleUrl: './header.component.scss',
 })
 export class HeaderComponent {
-  constructor(private router: Router) {}
+  constructor(private authService: AuthService) {}
 
   navbarCollapse() {
     document.getElementById('navContent')?.classList.remove('show');
   }
 
   logout() {
-    this.router.navigate(['/login']);
+    this.authService.logout();
   }
 }
